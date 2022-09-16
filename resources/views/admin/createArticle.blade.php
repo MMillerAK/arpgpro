@@ -32,7 +32,48 @@
     </div></div></div>
   </form>
 </div>
-@include('admin.quillscript')
+<script> 
+
+var quill = new Quill('#articletext', {
+  modules: {
+    toolbar: [
+      ['image'],
+      
+    ]
+  },
+  placeholder: 'Compose an epic...',
+  theme: 'snow',
+  handlers: {
+            image: this.imageHandler
+          },
+});
+
+
+
+var form = document.querySelector('form');
+
+var articleoutput = document.querySelector('input[name=article]');
+
+function submitChange() 
+{
+  
+  articleoutput.value = JSON.stringify(quill.getContents());
+  console.log(articleoutput);
+  alert('Open the console to see the submit data!')
+
+  return false;
+  
+ 
+}
+
+function imageHandler() {
+    var range = this.quill.getSelection();
+    var value = prompt('please copy paste the image url here.');
+    if(value){
+        this.quill.insertEmbed(10, 'image', 'https://quilljs.com/images/cloud.png');
+    }
+}
+</script>
 
 
 
