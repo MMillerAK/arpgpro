@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    function index()
+    public function index()
     {
 
-        dd('test')
-        return('admin.AdminPanel');
+        
+        return view('admin.AdminPanel');
     }
 
     

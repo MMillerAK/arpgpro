@@ -47,7 +47,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('admin.createarticle');
+        return view('admin.createArticle');
     }
 
 

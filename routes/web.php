@@ -20,14 +20,14 @@ Route::get('/', function () {
 
 
 //admin
-Route::get('/admin}', [AdminController::class, 'index']);
+Route::get('/admin', [AdminController::class, 'index']);
 
 
 Route::resource('articles', ArticleController::class)->names([
     'by_author' => 'articles.show_author'
 ]);
 Route::Post(
-    '/articcles/image/',
+    '/articles/image/',
     [UserProfileController::class, 'image']
 );
 
