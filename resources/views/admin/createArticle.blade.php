@@ -1,15 +1,10 @@
-@extends('layout')
+@extends('admin.layout')
 
 @section('header')
-
+<h1 class="h2">Create Article</h1>
 @endsection
 
 @section('content')
-
-
-
-
-
 
 <div id="form-container" class="container">
   <form id="article_form" method = "POST" action="/articles" onsubmit="submitChange()">
@@ -32,7 +27,17 @@
     </div></div></div>
   </form>
 </div>
-<script> 
+
+<script src="//cdn.quilljs.com/latest/quill.min.js"></script>
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+
+
+
+<script>
+
+var QuillDeltaToHtmlConverter = ('asset{{('js/QuillDeltaToHtmlConverter.bundle')}}').QuillDeltaToHtmlConverter;
+
 
 var quill = new Quill('#articletext', {
   modules: {
@@ -74,8 +79,6 @@ function imageHandler() {
     }
 }
 </script>
-
-
 
 
 @endsection

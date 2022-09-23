@@ -10,7 +10,7 @@ class AdminController extends Controller
     {
 
         
-        return view('admin.AdminPanel');
+        return view('admin.adminpanel');
     }
 
     
