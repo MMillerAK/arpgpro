@@ -29,7 +29,8 @@
                     <li><a class="dropdown-item" href="#">log out</a></li>
                     
                 </ul>
-            </li>        
+            </li>
+            Privacy Policy        
         </ul>
         
         <form class="d-flex" role="search">

@@ -1,0 +1,6 @@
+
+
+function showData(type, id)
+{
+
+}

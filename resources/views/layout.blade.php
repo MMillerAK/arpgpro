@@ -7,11 +7,9 @@
         <title>ARPGPro</title>
        
         @yield('header')
-        
-        
-        
         @include('shared.bootstrap')
-        <link rel="stylesheet" href="/css/horror.css">
+        
+        <link rel="stylesheet" href="/css/app.css">
 
     </head>
     <body class="antialiased">

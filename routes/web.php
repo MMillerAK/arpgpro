@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DatabaseController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,17 +23,23 @@ Route::get('/', function () {
 //admin
 Route::get('/admin', [AdminController::class, 'index']);
 
-
+//articles and guides
 Route::resource('articles', ArticleController::class)->names([
     'by_author' => 'articles.show_author'
 ]);
+
+Route::get('/articles/{id}', [UserController::class, 'show']);
+
 Route::Post(
     '/articles/image/',
     [UserProfileController::class, 'image']
 );
 
-Route::get('/articles/{id}', [UserController::class, 'show']);
+//game database
+Route::get('/database/create/item', [DatabaseController::class, 'createItem']);
+Route::Post('/database/create/item', [DatabaseController::class, 'storeItem']);
+Route::get('/view/item/{id}', [DatabaseController::class, 'viewItem']);
 
-/*Route::get('user/{id}', 'UserController@index');
-Route::get('user/{id}/posts', 'UserController@posts');
-*/
+
+Route::view('/test', 'test/loaditem');
+Route::view('/item', 'item');
