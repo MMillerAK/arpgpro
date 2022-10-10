@@ -14,7 +14,7 @@ use App\Http\Controllers\DatabaseController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+require __DIR__.'/auth.php';
 Route::get('/', function () {
     return view('home');
 });
@@ -43,3 +43,11 @@ Route::get('/view/item/{id}', [DatabaseController::class, 'viewItem']);
 
 Route::view('/test', 'test/loaditem');
 Route::view('/item', 'item');
+
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+

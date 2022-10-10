@@ -1,7 +1,6 @@
 <hr>
 <footer>
-        copyright arpg pro
-        
+        copyright arpg pro Privacy policy
         
 <div class="fix" >
 

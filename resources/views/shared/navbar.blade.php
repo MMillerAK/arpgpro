@@ -1,41 +1,37 @@
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">Arpg Pro</a>    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">        
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Topics
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/admin">Home</a></li>
-                    <li><a class="dropdown-item" href="/articles">Guides</a></li>
-                    <li><a class="dropdown-item" href="#">Videos</a></li>
 
-                    <li><a class="dropdown-item" href="/articles">All Articles</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Other Authors Content</a></li>
-                    <li><a class="dropdown-item" href="#">All Articles</a></li>
-                    
-                </ul>
-            </li>        
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">ARPGPRO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="#">Guides</a>
+            <a class="nav-link" href="#">Videos</a>
+
+            
+        </div>
+        <div class="navbar-nav ms-auto p-2">    
+        
+</div>
+        <div class="navbar-nav ms-auto p-2">    
+            <a class="nav-link " href="#"> Our Team </a>
+            <ul class="navbar-nav">                
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    admin
+                    Admin
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/admin">Admin panel</a></li>
-                    <li><a class="dropdown-item" href="#">Create Article</a></li>
-                    <li><a class="dropdown-item" href="#">log out</a></li>
-                    
-                </ul>
-            </li>
-            Privacy Policy        
-        </ul>
-        
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Admin Panel</a></li>
+                <li><a class="dropdown-item" href="#">Database</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+        </li>
+      </ul>
+
+        </div>
+           
     </div>
+  </div>
 </nav>

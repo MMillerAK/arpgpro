@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->int('name');
-            $table->int('game_id');
+            $table->integer('name');
+            $table->integer('game_id');
             $table->string('desc')->default("");
-            $table->int('rarity')->default(0);
+            $table->integer('rarity')->default(0);
             $table->string('slot')->default("none");
 
         });

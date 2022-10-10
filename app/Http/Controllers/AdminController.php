@@ -33,13 +33,7 @@ class AdminController extends Controller
             
         }
 
-        foreach($users as $user)
-        {
-            echo "user: $user->username <br>";
-        }
-
-        
-        return view('admin.adminpanel', ['articles' => $articles, 'users'=>$users]);
+        return view('admin.adminpanel', ['articles' => $articles]);
     }
 
     

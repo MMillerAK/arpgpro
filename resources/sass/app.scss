@@ -1,0 +1,15 @@
+$primary-color: #272727;  
+$font-color: AntiqueWhite;
+body {
+    background-color: $primary-color;
+    color: $font-color;
+  }
+
+  .navbar-brand
+  {
+    color: $font-color;
+  }
+  .nav-link
+  {
+    color: $font-color;
+  }
